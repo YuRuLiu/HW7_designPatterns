@@ -1,0 +1,64 @@
+design pattern note
+
+白話- OO設計原則 (SOLID原則) - 附生活實例
+http://rockssdlog.blogspot.tw/2012/03/oo-solid.html
+
+白話 Design Pattern (二) Simple Factory, Factory Method
+http://rockssdlog.blogspot.tw/2012/04/design-pattern_19.html
+
+白話 Design Pattern (七) Adapter Pattern, Abstract Server Pattern
+http://rockssdlog.blogspot.tw/2012/05/design-pattern-adapter-pattern.html
+
+Design Patterns(設計模式) 自我整理
+http://jimmy0222.pixnet.net/blog/post/37095632-design-patterns(%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F)-%E8%87%AA%E6%88%91%E6%95%B4%E7%90%86
+
+
+一、Creational(生成模式)
+        將部分物件的生成延遲到子類別決定。
+
+    1.singleton
+    定義：確定一個類別只會有一個物件實體，並且提供一個可以存取該物件的統一方法。
+    實例：一個人只有一天生日
+    
+    2.factory
+    定義：為一個產品族提供了統一的創建介面。當需要這個產品族的某一系列的時候，可以從抽象工廠中選出相應的系列創建一個具體的工廠類。
+    實例：郵局一個櫃台同時處理儲匯跟郵務
+    
+    3.factory method
+    定義：定義一個介面用於創建對象，但是讓子類決定初始化哪個類。工廠方法把一個類的初始化下放到子類。
+    實例：郵局一個櫃台處理儲匯，一個櫃台處理郵務
+    
+    
+    4.prototype
+    定義：用原型實例指定創建對象的種類，並且通過拷貝這些原型創建新的對象。
+    實例：印章，做出一個印章之後就可以一直蓋章了
+    
+二、Structural(結構模式)
+        使用繼承來組合介面或是實作。
+        
+    5.adapter
+    定義：將某個類的介面轉換成客戶端期望的另一個介面表示。適配器模式可以消除由於介面不匹配所造成的類兼容性問題。
+    實例：mini USB轉micro USB的轉接頭
+    
+    6.bridge
+    定義：將一個抽象與實現解耦，以便兩者可以獨立的變化。
+    實例：環島，騎自行車、騎機車、走路、搭火車、開車
+    
+    7.decorater
+    定義：向某個對象動態地添加更多的功能。修飾模式是除類繼承外另一種擴展功能的方法。
+    實例：漢堡，可以加蛋、加起司、加生菜、加火腿
+    
+    8.facade
+    定義：為子系統中的一組介面提供一個一致的界面， 外觀模式定義了一個高層介面，這個介面使得這一子系統更加容易使用。
+    實例：公共電話，投幣式、插卡式二合一
+    
+三、Behavioral(行為模式)
+        使用繼承來分配類別間的行為。
+
+    9.observer
+    定義：在對象間定義一個一對多的聯繫性，由此當一個對象改變了狀態，所有其他相關的對象會被通知並且自動刷新。
+    實例：搬家，帳單的地址都要更改
+    
+    10.command
+    定義：將一個請求封裝為一個對象，從而使你可用不同的請求對客戶進行參數化；對請求排隊或記錄請求日誌，以及支持可取消的操作。
+    實例：處方箋，不同的病患根據不同症狀吃不同的藥
